@@ -92,10 +92,15 @@ storiesOf('DateRangePicker', module)
       showClearDates
     />
   ))
-  .add('with clear dates button (Picker Displayed)', () => (
+  .add('reopens DayPicker on clear dates', () => (
     <DateRangePickerWrapper
       showClearDates
       reopenPickerOnClearDates
+    />
+  ))
+  .add('does not autoclose the DayPicker', () => (
+    <DateRangePickerWrapper
+      keepOpen
     />
   ))
   .add('non-english locale', () => {
